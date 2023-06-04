@@ -1,0 +1,51 @@
+.header-bg{
+    background-color: black;
+    color: white;
+}
+
+.header-inner{
+    padding-top: 20px;
+}
+
+.site-name{
+    color: #c79c60;
+    display: inline-block;
+    font-size: 32px;
+    margin: 0 10px;
+    font-family: 'Damion', cursive;
+    margin-left: 50px;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+
+.nav{
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav li {
+    list-style: none;
+    float: left;
+}
+
+.nav li a {
+    color: white;
+    display: inline-block;
+    padding: 15px 15px 20px 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.nav li a:hover,
+ .nav li a:focus,
+ .nav li a.active {  
+  color: #c79c60;
+  text-decoration: none;
+}
