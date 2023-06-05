@@ -54,17 +54,11 @@ a{
 
 
 .tm-more-button {
-    // display: -webkit-box;
-    // display: -webkit-flex;
-    // display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    // -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-    // -webkit-align-items: center;
-    // -ms-flex-align: center;
     align-items: center;
     background-image: url(./../../assets/images/brown-button.png);
     width: 196px;
@@ -80,8 +74,32 @@ a{
     margin: 40px auto;
 }
 
-.tm-table-set {
-    // position: absolute;
-    // bottom: -100px;
-    // left: 0;
+.w-90{
+    width: 90%;
+}
+
+
+@media screen and (max-width: 767px){
+    .light-1, .light-2 {
+        display: none;
+    }
+    .tm-lights-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .light {
+        width: 240px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 767px){
+    .tm-welcome-header {
+        font-size: 28px !important;
+    }
+    .tm-welcome-header-2 {
+        font-size: 28px !important;
+    }
 }

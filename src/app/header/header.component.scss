@@ -49,3 +49,21 @@
   color: #c79c60;
   text-decoration: none;
 }
+
+@media screen and (max-width: 991px){
+    .site-name{
+        margin-left: 0;
+    }
+    .container{
+        max-width: initial;
+    }
+    .res-mb-5{
+        margin-bottom: 72px;
+    }
+    .offcanvas-header{
+        padding-bottom: 0;
+    }
+    h5{
+        margin-bottom: 0;
+    }
+}
