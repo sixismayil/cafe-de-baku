@@ -1,96 +1,33 @@
-<div class="rm-middle">
-    <div class="rm-inner">
-        <div class="rm-content">
-            <h4><span class="drinkss">Pİzzalar</span></h4>
-            <dl>
-                <dt><a href="#menu" class="rm-viewdetails d-flex justify-content-left" data-thumb="images/012.jpg">Pİzza
-                        Margarita</a>
-                    <p class="price-right">6 AZN</p>
-                </dt>
-                <dd>Pomidor sousu, mozarella pendiri</dd>
+<div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="formbold-mb-5">
+                <label for="name" class="formbold-form-label"> First Name </label>
+                <input type="text" required formControlName="firstname" name="name" id="name" placeholder="First Name"
+                    class="formbold-form-input" />
+            </div>
 
-                <dt><a class="d-flex justify-content-left">Pİzza Quattro Formaggİo (Dörd pendİr)</a>
-                    <p class="price-right">8 AZN</p>
-                </dt>
-                <dd>Pomidor sousu, mozarella pendiri</dd>
+            <div class="formbold-mb-5">
+                <label for="subject" class="formbold-form-label"> Last Name </label>
+                <input type="text" formControlName="lastname" name="Last Name" id="lastname"
+                    placeholder="Enter your Last Name" class="formbold-form-input" />
+            </div>
 
-                <dt><a href="#menu" class="rm-viewdetails d-flex justify-content-left" data-thumb="images/013.jpg">Pİzza
-                        Pollo</a>
-                    <p class="price-right">8 AZN</p>
-                </dt>
-                <dd>Pomidor sousu, mozarella pendiri, toyuq filesi</dd>
+            <div class="formbold-mb-5">
+                <label for="email" class="formbold-form-label"> Email Address </label>
+                <input type="email" formControlName="email" name="email" id="email" placeholder="Enter your email"
+                    class="formbold-form-input" />
+            </div>
 
-                <dt><a class="d-flex justify-content-left">Pİzza BBQ toyuq</a>
-                    <p class="price-right">9 AZN</p>
-                </dt>
-                <dd>Pomidor sousu, mozarella pendiri, hisə verilmiş toyuq filesi, BBQ sousu</dd>
-                <br>
-                <h4><span class="drinkss">Klassİk Qəhvələr</span></h4>
+            <div class="formbold-mb-5">
+                <label for="message" class="formbold-form-label"> Message </label>
+                <textarea rows="6" formControlName="message" name="message" id="message" placeholder="Type your message"
+                    class="formbold-form-input"></textarea>
+            </div>
 
-                <dt><a class="d-flex justify-content-left">
-                        Espresso</a>
-                    <p class="price-right">3 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Cappuccİno</a>
-                    <p class="price-right">5 AZN</p>
-                </dt>
-
-                <dt> <a class="d-flex justify-content-left">
-                        Amerİcano</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Caffe Latte</a>
-                    <p class="price-right">5 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Espresso macchİato</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Espresso con panna</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-
-                <dt><a href="#menu" class="rm-viewdetails d-flex justify-content-left" data-thumb="images/01.jpg">
-                        Coffee De Baku</a>
-                    <p class="price-right">5 AZN</p>
-                </dt>
-                <dd style="margin-top: -10px;">
-                    Fındıq; Karamel; Vanil; İrİsh creme</dd>
-
-                <dt><a class="d-flex justify-content-left">
-                        İstİ şokolad</a>
-                    <p class="price-right">5 AZN</p>
-                </dt>
-                <dd style="margin-top: -10px;">Dark / White</dd>
-
-                <dt><a class="d-flex justify-content-left" style="margin-top: -10px;">
-                        Caramel macchİato</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Klassİk Türk Qəhvəsi</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Südlü Türk Qəhvəsi</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-
-                <dt><a class="d-flex justify-content-left">
-                        Double Espresso</a>
-                    <p class="price-right">4 AZN</p>
-                </dt>
-            </dl>
-        </div><!-- /rm-content -->
-        <div class="rm-overlay"></div>
-    </div><!-- /rm-inner -->
+            <div>
+                <button class="formbold-btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
 </div>

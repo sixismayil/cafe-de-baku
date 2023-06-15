@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MaterialModule,
     DragDropModule,
     OrderComponent,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
