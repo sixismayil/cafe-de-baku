@@ -1,33 +1,47 @@
-<div class="formbold-main-wrapper">
-    <div class="formbold-form-wrapper">
-        <form [formGroup]="form" (ngSubmit)="onSubmit()">
-            <div class="formbold-mb-5">
-                <label for="name" class="formbold-form-label"> First Name </label>
-                <input type="text" required formControlName="firstname" name="name" id="name" placeholder="First Name"
-                    class="formbold-form-input" />
+<div class="containers formbold-main-wrapper">
+    <div class="row">
+        <div class="col-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12156.883118830523!2d49.84742946810995!3d40.38179917623125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da7a06b402f%3A0xd8897cf79ec36111!2zMjggQWzEscWfdmVyacWfIE1lcmtlemk!5e0!3m2!1str!2saz!4v1687412904127!5m2!1str!2saz"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-6">
+            <div class="formbold-main-wrappers">
+                <div class="formbold-form-wrapper">
+                    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <div class="formbold-mb-5">
+                            <label for="name" class="formbold-form-label"> First Name </label>
+                            <input type="text" required formControlName="firstname" name="name" id="name"
+                                placeholder="First Name" class="formbold-form-input" />
+                        </div>
+
+                        <div class="formbold-mb-5">
+                            <label for="subject" class="formbold-form-label"> Last Name </label>
+                            <input type="text" formControlName="lastname" name="Last Name" id="lastname"
+                                placeholder="Enter your Last Name" class="formbold-form-input" />
+                        </div>
+
+                        <div class="formbold-mb-5">
+                            <label for="email" class="formbold-form-label"> Email Address </label>
+                            <input type="email" formControlName="email" name="email" id="email"
+                                placeholder="Enter your email" class="formbold-form-input" />
+                        </div>
+
+                        <div class="formbold-mb-5">
+                            <label for="message" class="formbold-form-label"> Message </label>
+                            <textarea rows="6" formControlName="message" name="message" id="message"
+                                placeholder="Type your message" class="formbold-form-input"></textarea>
+                        </div>
+
+                        <div>
+                            <button class="formbold-btn" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <div class="formbold-mb-5">
-                <label for="subject" class="formbold-form-label"> Last Name </label>
-                <input type="text" formControlName="lastname" name="Last Name" id="lastname"
-                    placeholder="Enter your Last Name" class="formbold-form-input" />
-            </div>
+        </div>
 
-            <div class="formbold-mb-5">
-                <label for="email" class="formbold-form-label"> Email Address </label>
-                <input type="email" formControlName="email" name="email" id="email" placeholder="Enter your email"
-                    class="formbold-form-input" />
-            </div>
-
-            <div class="formbold-mb-5">
-                <label for="message" class="formbold-form-label"> Message </label>
-                <textarea rows="6" formControlName="message" name="message" id="message" placeholder="Type your message"
-                    class="formbold-form-input"></textarea>
-            </div>
-
-            <div>
-                <button class="formbold-btn" type="submit">Submit</button>
-            </div>
-        </form>
     </div>
 </div>

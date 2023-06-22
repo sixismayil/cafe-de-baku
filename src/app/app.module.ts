@@ -13,6 +13,7 @@ import { OrderComponent } from './order/order.component';
 import { ContactComponent } from './contact/contact.component';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DialogPizzaComponent } from './dialogs/dialog-pizza/dialog-pizza.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     MenuComponent,
-    ContactComponent
+    ContactComponent,
+    DialogPizzaComponent
   ],
   imports: [
     BrowserModule,
